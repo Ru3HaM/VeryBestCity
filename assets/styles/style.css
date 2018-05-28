@@ -1,0 +1,309 @@
+@font-face {
+    font-family: "DepravoStencil";
+    src: url("../fonts/DepravoStencil-Regular.otf");
+}
+
+@font-face {
+	font-family: "Qavo";
+	src: url("../fonts/Qavo.otf");
+}
+
+body, h1, h2, h3, h4, a, p, button, input {
+	margin: 0;
+	font-family: "Qavo";
+	overflow: hidden;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+	background-repeat: no-repeat;
+}
+
+h1 {
+
+	font-size: 80px;
+    font-family: "DepravoStencil";
+}
+
+
+.section-main {
+	height: 100vh;
+	display: flex;
+	-moz-user-select: none;
+	user-select: none;    
+}
+
+.button {
+	margin: 150px 0 0 0 ;
+	height: 100px;
+	width: 300px;
+	display: inline-block;
+	background-color: #3399ff;
+	border: 2px white;
+	color: white;
+	font-weight: bold;
+    border-radius: 5px; 
+	font-size: 30px;
+}
+
+.main-title {
+	margin: 0;	
+	width: 400px;
+}
+
+.main-content {
+	right: 1400px;
+	top: 15%;
+	position: absolute;
+}
+
+.header {
+	margin: 0;
+	height: 60px;
+	width: 100%;
+	background-color: #0099ff; 
+}
+
+.backward {
+	text-decoration: none; 
+	position: absolute;
+	top: 20px;
+	right: 300px;
+	font-size: 20px;
+    font-family: "DepravoStencil";
+    background-color: white;
+    color: #0099ff;
+    border-radius: 5px; 
+}
+
+.slider {
+	margin: 0;
+	height: calc(100vh - 60px);
+	width: calc(3 * 100vw);
+	display: flex;
+	transition: .4s;
+}
+
+.a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	height: 100%;
+	width: 1920px;
+	background-color:;
+	z-index: 1;
+}
+
+.b {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	height: 100%;
+	width: 1920px;
+	background-color:;
+	z-index: 1;
+}
+
+.c {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	width: 1920px;
+	height: 100%;
+	background-color:;
+	z-index: 1;
+}
+
+.slide {
+	width: 33.33333%;
+}
+
+.slide-button {
+	top: 550px;
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	z-index: 999999;
+}
+
+.-left-button {
+	left: 50px;
+}
+
+.-right-button{
+	right: 50px;
+}
+
+.bottle {
+	position: relative;
+	height: 630px;
+	width: 211px;
+}
+
+.bottle-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: url(../img/bottle-cola.png);
+	background-repeat: no-repeat;
+	background-size: 102%;
+	background-position: center;
+}
+
+.bottle-back {
+	height: 100%;
+	width: 100%;
+	background: linear-gradient( white 50%, #521206 50%);
+	background-color: #f4f4f4;
+	background-size: 200%;
+	background-position-y: -110%;
+}
+
+.bottle-back2 {
+	height: 100%;
+	width: 100%;
+	background: linear-gradient( white 50%, #ceea3f 50%);
+	background-color: #f4f4f4;
+	background-size: 200%;
+	background-position-y: -110%;
+}
+
+.bottle-back3 {
+	height: 100%;
+	width: 100%;
+	background: linear-gradient( white 50%, #8ef2d9 50%);
+	background-color: #f4f4f4;
+	background-size: 200%;
+	background-position-y: -110%;
+}
+
+.slider.-position-1 {
+	transform: translateX(0);
+}
+
+.slider.-position-2 {
+	transform: translateX(-100vw);
+}
+
+.slider.-position-3 {
+	transform: translateX(-200vw);
+}
+
+.info {
+	position: absolute;
+	height: 630px;
+	width: 350px;
+	border: solid black 2px;
+	top: 0%;
+	left: 160%;
+	padding: 30px;
+}
+
+.sugar1 {
+	position: absolute;
+	top: 90%;
+	left: 0%;
+	background-image: url(../img/sudar.png);
+	background-repeat: no-repeat;
+	height: 250px;
+	width: 200px;
+	opacity: 1;
+
+}
+
+.sugar2 {
+	position: absolute;
+	top: 90%;
+	left: 20%;
+	background-image: url(../img/sudar.png);
+	background-repeat: no-repeat;
+	height: 250px;
+	width: 200px;
+
+}
+
+.sugar3 {
+	position: absolute;
+	top: 90%;
+	left: 40%;
+	background-image: url(../img/sudar.png);
+	background-repeat: no-repeat;
+	height: 250px;
+	width: 200px;
+
+}
+.sugar4 {
+	position: absolute;
+	top: 90%;
+	left: 60%;
+	background-image: url(../img/sudar.png);
+	background-repeat: no-repeat;
+	height: 250px;
+	width: 200px;
+
+}
+.sugar5 {
+	position: absolute;
+	top: 90%;
+	left: 80%;
+	background-image: url(../img/sudar.png);
+	background-repeat: no-repeat;
+	height: 250px;
+	width: 200px;
+	opacity: 0.2;
+}
+.sugar42 {
+	position: absolute;
+	top: 90%;
+	left: 60%;
+	background-image: url(../img/sudar.png);
+	background-repeat: no-repeat;
+	height: 250px;
+	width: 200px;
+	opacity: 0.2;	
+}
+
+.sugar13 {
+	position: absolute;
+	top: 90%;
+	left: 0%;
+	background-image: url(../img/sudar.png);
+	background-repeat: no-repeat;
+	height: 250px;
+	width: 200px;
+	opacity: 0.2;
+
+}
+
+.sugar23 {
+	position: absolute;
+	top: 90%;
+	left: 20%;
+	background-image: url(../img/sudar.png);
+	background-repeat: no-repeat;
+	height: 250px;
+	width: 200px;
+	opacity: 0.2;
+}
+
+.sugar33 {
+	position: absolute;
+	top: 90%;
+	left: 40%;
+	background-image: url(../img/sudar.png);
+	background-repeat: no-repeat;
+	height: 250px;
+	width: 200px;
+	opacity: 0.2;
+}
